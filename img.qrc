@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>B.PNG</file>
+    <file>img8.jpg</file>
+    <file>spikes.png</file>
+    <file>minion.jpg</file>
+    <file>learn.png</file>
+    <file>arrow.png</file>
+    <file>black.png</file>
+    <file>thetrumanshow.jpg</file>
+    <file>minion.jpg</file>
+    <file>grey.png</file>
+    <file>textEdit_2.png</file>
+    <file>nigeria.png</file>
+    <file>backgroundd.png</file>
+    <file>nut.png</file>
+    <file>cross.png</file>
+    <file>failled.png</file>
+    <file>buttons.png</file>
+    <file>b_1.jpg</file>
+    <file>textEdit.png</file>
+    <file>success.png</file>
+    <file>labels.png</file>
+    <file>a.png</file>
+    <file>button_2.png</file>
+    <file>b.jpg</file>
+  </qresource>
+</RCC>

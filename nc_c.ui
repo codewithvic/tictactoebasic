@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>499</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-image: url(:/newPrefix/B.PNG);
+}
+QFrame{
+	background-color: rgb(94, 164, 255);
+border-width:2px;
+	border-color: rgb(23, 71, 202);
+}
+QPushButton#howto{
+	background-image: url(:/newPrefix/buttons.png);
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+
+	color: rgb(0, 40, 137);
+
+	border-radius: 5px;
+
+	
+}
+QPushButton#begin{
+background-image: url(:/newPrefix/failled.png);
+font: 16pt &quot;MS Shell Dlg 2&quot;;
+	color: rgb(255, 170, 0);
+border-radius:30px;
+padding:5px;
+
+}
+/*hover*/
+QPushButton#howto:hover{
+background-image: url(:/newPrefix/failled.png);
+}
+QPushButton#begin:hover{
+background-image: url(:/newPrefix/buttons.png);
+}
+/*Pressed*/
+QPushButton#howto:pressed{
+color: rgb(255, 255, 255);
+background-image: url(:/newPrefix/buttons.png);
+}
+QPushButton#begin:pressed{
+color: rgb(255, 255, 255);
+background-image: url(:/newPrefix/failled.png);
+padding:2px;
+}
+QPushButton#play_1{
+	background-image: url(:/newPrefix/failled.png);
+border-radius:10px;
+}
+QPushButton#play_1:hover{
+	background-image: url(:/newPrefix/labels.png);
+}
+QPushButton#play_1:pressed{
+	background-image: url(:/newPrefix/failled.png);
+}
+QRadioButton#easy{
+	background-image: url(:/newPrefix/a.png);
+}
+QRadioButton#medium{
+	
+	background-image: url(:/newPrefix/failled.png);
+}
+QRadioButton#hard{
+	
+	background-image: url(:/newPrefix/grey.png);
+}
+QRadioButton#advanced{
+	
+	background-image: url(:/newPrefix/buttons.png);
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_2">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>74</x>
+          <y>69</y>
+          <width>321</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-image: url(:/newPrefix/labels.png);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ff0000;&quot;&gt;Nuts &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#ff007f;&quot;&gt;and &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#9c3a7d;&quot;&gt;Crosses &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#c8ff70;&quot;&gt;V1.1.0 &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>471</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-image: url(:/newPrefix/labels.png);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ff0000;&quot;&gt;(C) Victor 2017 &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#ffff7f;&quot;&gt;Games.&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;edu.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>151</x>
+          <y>310</y>
+          <width>101</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-image: url(:/newPrefix/textEdit.png);
+border-radius:10px;
+image: url(:/newPrefix/success.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="begin">
+        <property name="geometry">
+         <rect>
+          <x>72</x>
+          <y>421</y>
+          <width>271</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Begin</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="howto">
+        <property name="geometry">
+         <rect>
+          <x>122</x>
+          <y>381</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>How to play(Simple)</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>20</y>
+          <width>20</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/textEdit_2.png);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>41</width>
+          <height>641</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/nigeria.png);
+background-image: url(:/newPrefix/textEdit_2.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lab">
+        <property name="geometry">
+         <rect>
+          <x>53</x>
+          <y>110</y>
+          <width>411</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-image: url(:/newPrefix/black.png);
+image: url(:/newPrefix/thetrumanshow.jpg);
+border-radius:10px;
+</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffffff;&quot;&gt;It's Either you &lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ff0000;&quot;&gt;Nut &lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ff007f;&quot;&gt;The &lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#9c3a7d;&quot;&gt;Crosses &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#005500;&quot;&gt;|Or &lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ff4939;&quot;&gt;Cross the &lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#aaaa00;&quot;&gt;Nuts&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ff0000;&quot;&gt;💘💖&lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ffff00;&quot;&gt;💢&lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#55007f;&quot;&gt;💥&lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#5500ff;&quot;&gt;🎆&lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ffffff;&quot;&gt;🎇&lt;/span&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline; color:#ff5500;&quot;&gt;🎉&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>350</y>
+          <width>251</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/minion.jpg);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="easy">
+        <property name="geometry">
+         <rect>
+          <x>346</x>
+          <y>451</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-radius:10px;
+color: rgb(0, 170, 0);
+font: italic 14pt &quot;Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string> Easy</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="medium">
+        <property name="geometry">
+         <rect>
+          <x>367</x>
+          <y>472</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-radius:10px;
+color: rgb(217, 217, 108);
+font: italic 14pt &quot;Monotype Corsiva&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Medium</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="hard">
+        <property name="geometry">
+         <rect>
+          <x>346</x>
+          <y>493</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-radius:10px;
+color: rgb(255, 0, 0);
+font: italic 14pt &quot;Monotype Corsiva&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Hard</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="advanced">
+        <property name="geometry">
+         <rect>
+          <x>372</x>
+          <y>514</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-width:2px;
+border-radius:10px;
+color: rgb(255, 255 ,255);
+font: italic 14pt &quot;Monotype Corsiva&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Advanced</string>
+        </property>
+       </widget>
+       <zorder>label_6</zorder>
+       <zorder>label</zorder>
+       <zorder>label_2</zorder>
+       <zorder>label_3</zorder>
+       <zorder>howto</zorder>
+       <zorder>line</zorder>
+       <zorder>label_4</zorder>
+       <zorder>lab</zorder>
+       <zorder>begin</zorder>
+       <zorder>easy</zorder>
+       <zorder>medium</zorder>
+       <zorder>hard</zorder>
+       <zorder>advanced</zorder>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>491</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/newPrefix/learn.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="play_1">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>470</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Play</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>499</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
